@@ -1,0 +1,1464 @@
+@font-face {
+    font-family:Nunito ;
+    src: url(/src/fonts/Nunito-Medium.ttf);
+}
+@font-face {
+    font-family:Rubik;
+    src: url(/src/fonts/RubikMonoOne-Regular.ttf);
+}
+@font-face {
+    font-family:Guy;
+    src: url(/src/fonts/LuckiestGuy-Regular.ttf);
+}
+@font-face {
+    font-family:Ubuntu;
+    src: url(/src/fonts/Ubuntu-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #0D0D0D;
+    background-image: url(img/WAVE\ GRID\ MAIN.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    height: 100%;
+}
+html {
+  overflow-x: hidden;
+}
+
+/* NAVBAR SECTION  */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 1.2vw;
+}
+nav #logo img {
+    width: 100%;
+    object-fit: cover;
+}
+nav #links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 1.5vw;
+    gap: 8vw;
+}
+nav #links a {
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    font-family: Nunito;
+    font-size: 1vw;
+    font-weight: 800;
+}
+nav #links button {
+    padding: 0.5vw 0.8vw;
+    border-radius: 6px;
+    border: none;
+    background-color: #16FF11;
+    color: #070707;
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+/* MAIN SECTION */
+
+
+#mainh1 {
+    width: 100%;
+    min-height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mainh1 #h1 h1 {
+    font-size: 7vw;
+    font-family: "Rubik Mono One";
+    letter-spacing: -6.72px;
+    margin-top: 4.5vw;
+    color: #FFF;
+}
+
+
+/* origin part */
+
+#packets {
+    width: 100%;
+    min-height: 400vh;
+    position: relative;
+}
+#originh1 {
+    font-family:"Luckiest Guy";
+    display: flex;
+    justify-content: space-around;
+}
+#originh1 {
+    margin-bottom: -4.5vw;
+    font-size: 7vw;
+    margin-left: -8vw;
+    color: #E21143;
+
+}
+#originh1 img {
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.7);
+}
+#packets #originContainer {
+    width: 100%;
+    height: 45rem;
+    background-color: #E21143;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+#originContainer p {
+    width: 50vw;
+    font-family:"Luckiest Guy";
+    font-size: 2.5vw;
+    color: white;
+    margin-left: 5%;
+    
+}
+#originContainer img {
+    width: 35%;
+    mix-blend-mode: lighten;
+}
+#originContainer::before {
+    content: "AND PROBLEMS";
+    font-family: "Luckiest Guy";
+    font-size: 2.8vw;
+    color: #FFF;
+    left: 19vw;
+    top: 0;
+    position: absolute;
+}
+#originContainer .texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    z-index: 5;
+}
+
+/* jod container part  */
+
+#jodh1 {
+    font-family:"Luckiest Guy";
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -4.5vw;
+    font-size: 7vw;
+    margin-left: -8vw;
+    color: #0029FF;
+    margin-top: 5vw;
+
+}
+#jodContainer {
+    width: 100%;
+    height: 45rem;
+    background-color: #0029FF;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+#jodh1 img {
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.7);
+}
+#packets #jodContainer {
+    width: 100%;
+    height: 45 rem;
+    background-color: #0029FF;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+#jodContainer p {
+    width: 70vw;
+    font-family:"Luckiest Guy";
+    font-size: 2.5vw;
+    color: white;
+    margin-left: 5%;
+    
+}
+#jodContainer img {
+    width: 35%;
+    z-index: 4;
+    mix-blend-mode: lighten;
+}
+#jodContainer::before {
+    content: "MOMENT";
+    font-family: "Luckiest Guy";
+    font-size: 2.8vw;
+    color: #FFF;
+    /* left: 19vw; */
+    left: 22vw;
+    top: 0;
+    position: absolute;
+}
+#jodContainer .texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    z-index: 5;
+}
+
+
+/* what container part  */
+
+#whath1 {
+    font-family:"Luckiest Guy";
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -4.5vw;
+    font-size: 7vw;
+    margin-left: -8vw;
+    color: #AC1CDE;
+    margin-top: 5vw;
+
+}
+#whatContainer {
+    width: 100%;
+    height: 45rem;
+    background-color: #AC1CDE;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+#whath1 img {
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.7);
+}
+#packets #whatContainer {
+    width: 100%;
+    height: 45rem;
+    background-color: #AC1CDE;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+#whatContainer p {
+    width: 70vw;
+    font-family:"Luckiest Guy";
+    font-size: 2.5vw;
+    color: white;
+    margin-left: 5%;
+    
+}
+#whatContainer img {
+    width: 35%;
+    z-index: 4;
+    mix-blend-mode: lighten;
+}
+#whatContainer::before {
+    content: "IS REWIO";
+    font-family: "Luckiest Guy";
+    font-size: 2.8vw;
+    color: #FFF;
+    left: 19vw;
+    top: 0;
+    position: absolute;
+}
+#whatContainer .texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    z-index: 5;
+}
+
+
+
+/* our team part  */
+
+
+#teamContainer {
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#teamh1 {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#teamh1 h1 {
+    font-size: 7vw;
+    font-family: "Rubik Mono One";
+    letter-spacing: -6.72px;
+    margin-top: 20vw;
+    color: #FFF;
+}
+#cardContainer {
+    width: 80%;
+    height: 100%;
+    margin-top: -5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    gap: -10rem;
+}
+#cards {
+    width: 26rem;
+    height: 23rem;
+    border-radius: 15px;
+    position: relative;
+}
+.one {
+    background-color: #FF5C00;
+}
+.two {
+    background-color: #118AE2;
+}
+
+.three {
+    background-color: #FF4ACC;
+}
+
+.four {
+    background-color: #E21143;
+}
+.o1 {
+    border: 3.5px solid  #FF5C00;
+}
+.o2 {
+    border: 3.5px solid  #118AE2;
+}
+.o3 {
+    border: 3.5px solid  #FF4ACC;
+}
+.o4 {
+    border: 3.5px solid  #E21143;
+}
+#overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #070707;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#overlay:hover{
+    position: absolute;
+    top: -26px;
+    right: 24px;
+    transition: 0.2s linear;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    padding: 0.5vw 2vw;
+}
+.social,.social i {
+    margin-right: 1vw;
+    transition: 0.2s ease;
+    cursor: pointer;
+    color: #FFF;
+}
+.social i:hover{
+    transform: scale(2);
+}
+.o1 #top h3 {
+    font-size: 2vw;
+    color: white;
+    font-family: "Luckiest Guy";
+}
+#bottom {
+    width: 100%;
+    height: 100%;
+}
+#bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 7.5rem;
+}
+.o2 #top h3 {
+    font-size: 2vw;
+    color: white;
+    font-family: "Luckiest Guy";
+}
+.o3 #top h3 {
+    font-size: 2vw;
+    color: white;
+    font-family: "Luckiest Guy";
+}
+.o4 #top h3 {
+    font-size: 2vw;
+    color: white;
+    font-family: "Luckiest Guy";
+}
+.o1::after{
+    content: "Co-founder and Chief Dreamer";
+    font-family: "Luckiest Guy";
+    font-size: 2vw;
+    position: absolute;
+    bottom: -8rem;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+}
+.o2::after{
+    content: "Co-founder and Chief Fixer";
+    font-family: "Luckiest Guy";
+    font-size: 2vw;
+    position: absolute;
+    bottom: -8rem;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+}
+.o3::after{
+    content: "FULL-STACK DEV, Brogrammer";
+    font-family: "Luckiest Guy";
+    font-size: 2vw;
+    position: absolute;
+    bottom: -8rem;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+}
+.o4::after{
+    content: "Designer, Creative Guru";
+    font-family: "Luckiest Guy";
+    font-size: 2vw;
+    position: absolute;
+    bottom: -8rem;
+    width: 59%;
+    text-align: center;
+    color: #fff;
+}
+
+#top-1,#bottom-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+@media(max-width:850px) {
+  .o4::after {
+    width: 80%;
+  }  
+  .o1::after {
+    width: 80%;
+  }
+}
+
+
+/* btn effect */
+
+
+
+.container-btn {
+    display: flex;
+    flex-direction: row;
+  }
+  .btn {
+    font-family: Ubuntu;
+  }
+  
+  .radio-wrapper {
+    position: relative;
+    height: 38px;
+    width: 157px;
+    margin: 3px;
+    z-index: 99;
+  }
+  
+  .radio-wrapper .input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+  }
+  
+  .btn {
+    position: absolute;
+    --primary: #ff184c;
+    --shadow-primary: #fded00;
+    --color: white;
+    --font-size: 9px;
+    --shadow-primary-hue: 180;
+    --shadow-secondary-hue: 60;
+    --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
+    --clip: polygon(11% 0, 95% 0, 100% 25%, 90% 90%, 95% 90%, 85% 90%, 85% 100%, 7% 100%, 0 80%);
+    --border: 5px;
+    --shimmy-distance: 5;
+    --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
+    --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
+    --clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
+    --clip-four: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+    --clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+    --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
+    --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
+    color: var(--color);
+    text-transform: uppercase;
+    font-size: var(--font-size);
+    letter-spacing: 3px;
+    position: relative;
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    line-height: 38px;
+    text-align: center;
+    font-family: Ubuntu;
+    transition: background 0.2s, 0.3s;
+  }
+  
+  .input:checked + .btn {
+    --primary: #8B00FF;
+    --shadow-primary: #00e572;
+  }
+
+  
+  .input:hover + .btn {
+    --primary: #cc133c;
+    --font-size: 11px;
+  }
+  
+  .btn:after, .btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: var(--clip);
+    z-index: -1;
+  }
+  
+  .btn:before {
+    background: var(--shadow-primary);
+    transform: translate(var(--border), 0);
+  }
+  
+  .btn:after {
+    background: var(--primary);
+  }
+  
+  .btn__tag {
+    position: absolute;
+    padding: 1px 4px;
+    letter-spacing: 1px;
+    line-height: 1;
+    bottom: -5%;
+    right: 5%;
+    font-weight: normal;
+    color: hsl(0, 0%, 0%);
+    font-size: var(--label-size);
+  }
+  
+  .btn__glitch {
+    position: absolute;
+    top: calc(var(--border) * -1);
+    left: calc(var(--border) * -1);
+    right: calc(var(--border) * -1);
+    bottom: calc(var(--border) * -1);
+    background: var(--shadow-primary);
+    text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
+    clip-path: var(--clip);
+    animation: glitch 2s infinite;
+    display: none;
+  }
+  
+  .input:hover + .btn .btn__glitch {
+    display: block;
+  }
+  
+  .input:checked + .btn .btn__glitch {
+    display: block;
+    animation: glitch 5s infinite;
+  }
+  
+  .btn__glitch:before {
+    content: '';
+    position: absolute;
+    top: calc(var(--border) * 1);
+    right: calc(var(--border) * 1);
+    bottom: calc(var(--border) * 1);
+    left: calc(var(--border) * 1);
+    clip-path: var(--clip);
+    background: var(--primary);
+    z-index: -1;
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--clip-one);
+    }
+  
+    2%, 8% {
+      clip-path: var(--clip-two);
+      transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+    }
+  
+    6% {
+      clip-path: var(--clip-two);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+  
+    9% {
+      clip-path: var(--clip-two);
+      transform: translate(0, 0);
+    }
+  
+    10% {
+      clip-path: var(--clip-three);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+  
+    13% {
+      clip-path: var(--clip-three);
+      transform: translate(0, 0);
+    }
+  
+    14%, 21% {
+      clip-path: var(--clip-four);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+  
+    25% {
+      clip-path: var(--clip-five);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+  
+    30% {
+      clip-path: var(--clip-five);
+      transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+    }
+  
+    35%, 45% {
+      clip-path: var(--clip-six);
+      transform: translate(calc(var(--shimmy-distance) * -1%));
+    }
+  
+    40% {
+      clip-path: var(--clip-six);
+      transform: translate(calc(var(--shimmy-distance) * 1%));
+    }
+  
+    50% {
+      clip-path: var(--clip-six);
+      transform: translate(0, 0);
+    }
+  
+    55% {
+      clip-path: var(--clip-seven);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+  
+    60% {
+      clip-path: var(--clip-seven);
+      transform: translate(0, 0);
+    }
+  
+    31%, 61%, 100% {
+      clip-path: var(--clip-four);
+    }
+  }
+  
+  .number {
+    background: var(--shadow-primary);
+    color: #323232;
+    font-size: 5.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: absolute;
+    width: 15px;
+    height: 6px;
+    top: 0;
+    left: 81%;
+    line-height: 6.2px;
+  }
+  
+
+
+  .btn {
+    font-family: Ubuntu;
+  }
+
+
+
+
+#witbtn {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -30vw;
+}
+
+
+
+
+/*----------------------------
+            footer
+------------------------------*/
+
+
+
+.f-container {
+    width: 100%;
+    height: 25rem;
+    background-color: black;
+    margin-top: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.marquee-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    background: #3DFF2A;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7rem;
+}
+
+.marquee-container h3 {
+    font-family: Ubuntu;
+    font-size: 1.5vw;
+    letter-spacing: 1.08px;
+    font-weight: 900;
+    animation: marquee 10s infinite linear;
+    color: white;
+}
+
+.marquee-container a {
+    color: black;
+}
+
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.middel {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-main img{
+    width: 100%;
+}
+.icons-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.icons-container a {
+    color: white;
+}
+.end {
+    width: 100%;
+    padding: 1vw 2vw;
+}
+.tc-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Ubuntu;
+    font-size: 1.5vw;
+    color: #16FF11;
+    padding: 0 10vw;
+    margin-left: -1rem;
+}
+.marquee-container h3 a {
+    text-decoration: none;
+}
+.icons-container a:hover{
+    transform: scale(1.5);
+    transition: 0.2s ease;
+}
+
+@media ( max-width : 1200px ) {
+    #packets #originContainer,#packets #jodContainer,#packets #whatContainer {
+        height: 35rem;
+    }
+    #packets {
+        min-height: 200vh;
+    }
+    #cards {
+        width: 20rem;
+        height: 19rem;
+    }
+    #teamContainer {
+        height: 187vh;
+    }
+    #witbtn {
+      margin-bottom: -48vw;
+    }
+}
+
+@media ( max-width : 1000px ) {
+    #packets #originContainer,#packets #jodContainer,#packets #whatContainer {
+        height: 28rem;
+    }
+    #packets {
+        min-height: 100vh;
+    }
+    #cards {
+        width: 15rem;
+        height: 14rem;
+    }
+    #teamContainer {
+        height: 150vh;
+    }
+    #witbtn {
+        margin-bottom: -45vw;
+    }
+    #bottom img {
+        margin-bottom: 4.5rem;
+    }
+    .o1::after , .o2::after ,.o3::after ,.o4::after {
+        bottom: -5rem;
+    }
+}
+
+@media ( max-width:850px ) {
+    nav #logo img {
+        width: 50%;
+
+    }
+    #mainh1 #h1 h1 {
+        letter-spacing: 0;
+    }
+    #originContainer .mainImg,#jodContainer .mainImg , #whatContainer .mainImg {
+        display: none;
+    }
+
+    #packets #originContainer , #packets #jodContainer, #packets #whatContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #originContainer p , #jodContainer p ,#whatContainer p {
+        width: 70vw;
+        font-size: 3.7vw;
+    }
+    #packets #originContainer {
+        height: 35rem;
+    }
+    #packets #jodContainer,#packets #whatContainer {
+        height: 39rem;
+    }
+    #originh1 img,#jodh1 img,#whath1 img {
+        transform: scale(0.5);
+    }
+    #originContainer::before , #jodContainer::before,#whatContainer::before {
+        font-size: 3.8vw;
+    }
+    #jodh1,#whath1,#originh1 {
+        margin-bottom: 0rem;
+        align-items: flex-end;
+        margin-left: 1rem;
+        font-size: 10vw;
+    }
+    #jodh1 h1,#whath1 h1,#originh1 h1 {
+        margin-bottom: -3rem;
+    }
+    #teamContainer {
+        height: 110vh;
+      }
+      #originContainer::before, #jodContainer::before, #whatContainer::before {
+        font-size: 5vw;
+      }
+      #cards {
+        width: 10rem;
+        height: 9rem;
+      }
+      #bottom img {
+        margin-bottom: -7rem;
+      }
+      #teamContainer {
+        height: 90vh;
+      }
+      .o1::after, .o2::after, .o3::after, .o4::after {
+        bottom: -4.3rem;
+      }
+      #teamh1 h1 {
+        letter-spacing: 0;
+      }
+
+      /* footer part  */
+
+      .marquee-container{
+        height: 1.5rem;
+      }
+      .f-container{
+        height: 17rem;
+        background-color: black;
+        margin-top: 21rem;
+      }
+      .middel{
+        height: 9vh;
+      }
+      .footer-main img{
+        height: 70%;
+      }
+      .o1 #top h3,.o2 #top h3,.o3 #top h3,.o4 #top h3 {
+        letter-spacing: 0.7px;
+      }
+      .social, .social i {
+        font-size: 2.5vw;
+        display: flex;
+        gap: 0.7rem;
+      }
+     
+}
+
+
+@media (max-width: 700px) {
+    #packets #originContainer {
+      height: 28rem;
+    }
+    #packets #jodContainer, #packets #whatContainer {
+        height: 33rem;
+      }
+      #mainh1 {
+        min-height: 40vh;
+
+      }
+      #jodh1,#whath1 {
+        margin-top: -3vw;
+      }
+      .o1 #top h3,.o2 #top h3,.o3 #top h3,.o4 #top h3 {
+        letter-spacing: 0.7px;
+      }
+      #mainh1 {
+        margin-top: 7vh;
+      }
+}
+
+@media (max-width:550px) {
+    #packets #originContainer {
+        height: 20rem;
+      }
+      #packets #jodContainer, #packets #whatContainer {
+        height: 24rem;
+      }
+      #originh1 img, #jodh1 img, #whath1 img {
+        transform: scale(0.3);
+      }
+      #jodh1 h1, #whath1 h1, #originh1 h1 {
+        margin-bottom: -1.5rem;
+      }
+      #jodh1, #whath1, #originh1 {
+        margin-bottom: 0rem;
+        font-size: 8vw;
+      }
+      #originContainer::before, #jodContainer::before, #whatContainer::before {
+        font-size: 5vw;
+      }
+      #mainh1 {
+        min-height: 7vh;
+      }
+      #jodh1, #whath1 {
+        margin-top: -9vw;
+      }
+      .o1 #top h3,.o2 #top h3,.o3 #top h3,.o4 #top h3 {
+        letter-spacing: 0.7px;
+        font-size: 0.65rem;
+      }
+      .o1::after,.o2::after,.o3::after,.o4::after {
+        font-size: 3vw;
+      }
+      #cards {
+        width: 9rem;
+        height: 9rem;
+      }
+      .o1::after, .o2::after, .o3::after, .o4::after {
+        font-size: 2.5vw;
+      }
+
+      #bottom img {
+        margin-bottom: -7.1rem;
+      }
+      #teamContainer {
+        height: 82vh;
+      }
+      #witbtn {
+        margin-bottom: -63vw;
+      }
+      #originContainer p , #jodContainer p ,#whatContainer p {
+        width: 89vw;
+        font-size: 3.4vw;
+    }
+
+
+      /* footer part  */
+
+      .f-container{
+        height: 13rem;
+      }
+      .footer-main img {
+        height: 56%;
+      }
+      .icons-container {
+        font-size: 3vw;
+      }
+      .tc-container {
+        font-size: 1.5vw;
+      }
+      .marquee-container {
+        gap: 5rem;
+      }
+}
+@media(max-width:500px) {
+  #witbtn {
+    margin-bottom: -76vw;
+  }
+}
+
+@media (max-width:400px) {
+    #packets #originContainer {
+        height: 14rem;
+      }
+      #packets #jodContainer, #packets #whatContainer {
+        height: 16rem;
+      }
+      #jodh1 h1, #whath1 h1, #originh1 h1 {
+        margin-bottom: -1.1rem;
+      }
+      #jodh1, #whath1, #originh1 {
+        font-size: 6.5vw;
+      }
+      #mainh1 {
+        min-height: 12vh;
+      }
+      #cards {
+        width: 7.5rem;
+        height: 7.5rem;
+      }
+      #teamh1 {
+        min-height: 0;
+      }
+      #cardContainer {
+        height: 69%;
+      }
+      #overlay {
+        border-radius: 8px;
+      }
+      .o1 {
+        border: 1.5px solid #FF5C00;
+      }
+      .o2 {
+        border: 1.5px solid #118AE2;
+      }
+      .o3 {
+        border: 1.5px solid #FF4ACC;
+      }
+      .o4 {
+        border: 1.5px solid #E21143;
+      }
+      #bottom img {
+        margin-bottom: -6rem;
+      }
+      .o1::after, .o2::after, .o3::after, .o4::after {
+        bottom: -2.3rem;
+      }
+      #overlay:hover{
+        top: -10px;
+        right: 10px;
+    }
+    #cardContainer {
+      height: 76%;
+    }
+    #teamContainer {
+      height: 59vh;
+    }
+    #witbtn {
+      margin-bottom: -98vw;
+    }
+    #packets {
+      margin-top: -4vh;
+    }
+    main {
+      margin-top: -4vh;
+    }
+    #cardContainer {
+      margin-top: -5%;
+    }
+
+    /* footer part  */
+
+    .marquee-container h3 {
+      font-size: 2vw;
+    }
+    .marquee-container {
+      gap: 3rem;
+    }
+    .middel {
+      height: 7vh;
+    }
+    .f-container {
+      height: 9rem;
+    }
+    .marquee-container {
+      height: 1rem;
+    }
+    .footer-main img {
+      height: 44%;
+    }
+    .radio-wrapper {
+      height: 34px;
+      width: 125px;
+    }
+}
+
+
+@media(max-width:350px) {
+  #jodh1 h1, #whath1 h1, #originh1 h1 {
+    margin-bottom: -1rem;
+  }
+}
+
+/* logo part   */
+
+
+@media (max-width:700px) {
+  #logo {
+    width: 85%;
+  }
+}
+
+@media (max-width:500px) {
+  #logo {
+    width: 62%;
+  }
+}
+
+/* responsive navbar  */
+
+nav #links a[name=mblbtn] {
+  display: none;
+}
+nav {
+  position: relative;
+}
+
+.toggle-btn {
+  display: none;
+  color: #3DFF2A;
+  font-size: 5vw;
+  cursor: pointer;
+}
+.stars {
+  display: none;
+}
+
+@media(max-width:950px) {
+  .toggle-btn {
+    display: block;
+  }
+  nav #links a[name=mblbtn] {
+    display: block;
+  }
+  nav #links a[name=pcbtn] {
+    display: none;
+  }
+  .toggle-btn i[name=bars] {
+    display: block;
+  }
+  .toggle-btn i[name=close] {
+    display: none;
+  }
+  .active .toggle-btn i[name=bars] {
+    display: none;
+  }
+  .active .toggle-btn i[name=close] {
+    display: block;
+    padding: 2.5vw 0;
+  }
+  .active .toggle-btn i[name=close]:hover{
+    transform: rotate(-35deg);
+    transition: 0.3s ease;
+    opacity: 0.5;
+  }
+  nav #links a {
+    font-size: 1rem;
+  }
+
+  #navbar {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .active .toggle-btn {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    z-index: 9999999;
+  }
+  nav #links {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    gap: 5rem;
+  }
+  .stars {
+    display: inline-block;
+    width: 8vw;
+    position: absolute;
+  }
+  #topstar {
+    top: 30%;
+    right: 8%;
+  }
+  #bstar {
+    bottom: 35%;
+    left: 10%;
+  }
+  .active #logo {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999999;
+    transition: 0.2s ease;
+    width: 50%;
+  }
+  .active #navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  nav{
+    padding: 2vw 3.5vw;
+  }
+  
+}
+
+#links a:hover {
+  color: #16FF11;
+  transition: 0.2s ease;
+}
+
+@media(max-width:600px) {
+  .marquee-container h3 {
+    font-weight: 600;
+  }
+  .marquee-container {
+    gap: 1.5rem;
+  }
+  .tc-container {
+    font-size: 2vw;
+  }
+}
+
+
+#links a[name=our]::before{
+  content: "";
+  background-image: url('img/oursvg--.svg');
+    width: 1.1rem;
+    height: 1.1rem;
+    z-index: 9999999;
+    background-size: cover;
+    position: absolute;
+    left: -1.5rem;
+    background-repeat: no-repeat;
+
+}
+#links a[name=contact]::before{
+  content: "";
+  background-image: url('img/tri.svg');
+    width: 1.1rem;
+    height: 1.1rem;
+    z-index: 9999999;
+    background-size: cover;
+    position: absolute;
+    left: -1.5rem;
+    background-repeat: no-repeat;
+
+}
+
+#links a[name=mblbtn]::before{
+  content: "";
+  background-image: url('img/join----.svg');
+    width: 1.1rem;
+    height: 1.1rem;
+    z-index: 9999999;
+    background-size: cover;
+    position: absolute;
+    left: -1.5rem;
+    background-repeat: no-repeat;
+
+}
+
+@media (max-width: 470px) {
+  #witbtn {
+    margin-bottom: -81vw;
+  }
+}
+@media (max-width: 375px) {
+  #witbtn {
+    margin-bottom: -101vw;
+  }
+}
+@media (max-width: 340px) {
+  #witbtn {
+    margin-bottom: -113vw;
+  }
+}
+
+@media(max-width:400px){
+  #originContainer::before{
+    left: 15vw;
+  }
+  
+}
+
+nav #links a button {
+  font-weight: 500;
+}
+
+/* nav {
+  background: rgba(0, 0, 0, 0.82);
+} */
+
+@media ( max-width:430px ) {
+  #witbtn {
+    margin-bottom: -90vw;
+  }
+
+}
+@media ( max-width:380px ) {
+  #witbtn {
+    margin-bottom: -102vw;
+  }
+
+
+
+}
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip:active .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
